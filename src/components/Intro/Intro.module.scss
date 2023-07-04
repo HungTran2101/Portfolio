@@ -1,0 +1,32 @@
+@import '../../sass/global_imports.scss';
+
+.intro {
+  padding-top: 100px;
+  background-color: $secondary;
+
+  .introWrapper{
+    display: flex;
+    flex-direction: column;
+
+    .info{
+      display: flex;
+      justify-content: space-between;
+
+      .content{
+
+        .jobPosition{
+
+        }
+        .firstText{
+
+        }
+      }
+      .avatar{
+
+      }
+    }
+    .techs{
+
+    }
+  }
+}
