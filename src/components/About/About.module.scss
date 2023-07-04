@@ -18,7 +18,7 @@
     .images {
       display: flex;
       flex-direction: column;
-      width: 400px;
+      width: 450px;
       flex-shrink: 0;
       gap: 20px;
 
@@ -70,8 +70,8 @@
             transition: opacity 0.3s;
 
             @include Responsive(smartphone-portrait) {
-              width: 30px;
-              height: 30px;
+              width: 40px;
+              height: 40px;
               padding: 0;
             }
 

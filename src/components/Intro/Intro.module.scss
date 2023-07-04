@@ -49,6 +49,7 @@
         .firstText {
           color: $textColor;
           font-size: 1.2rem;
+          line-height: 1.7rem;
         }
         .links {
           display: flex;
@@ -59,8 +60,9 @@
 
       .mask {
         --uiMaskClipPath: var(--maskClipPath);
-        width: 300px;
-        height: 300px;
+        $maskSize: 350px;
+        width: $maskSize;
+        height: $maskSize;
         display: flex;
         justify-content: center;
         padding: 3px;
@@ -68,8 +70,8 @@
         background-color: black;
 
         @include Responsive(smartphone-landscape){
-          width: 250px;
-          height: 250px;
+          width: $maskSize - 100px;
+          height: $maskSize - 100px;
         }
 
         &.mask_type1 {
