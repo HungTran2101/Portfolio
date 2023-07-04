@@ -62,7 +62,7 @@ export const HeaderData = {
 export const IntroData = {
   jobPosition: 'Frontend React Developer',
   firstText:
-    "Hii, I'm Tran Nhat Hung. A enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam",
+    "Hii, I'm Tran Nhat Hung. An enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam",
   profileLinks: ProfileLinks,
   avatar: Info.avatar,
   techs: {
@@ -82,7 +82,7 @@ export const IntroData = {
 
 export const AboutData = {
   label: 'About Me',
-  title: 'A enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam',
+  title: 'An enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam',
   banner: aboutBanner,
   swiperSlides: [
     reactsvg,

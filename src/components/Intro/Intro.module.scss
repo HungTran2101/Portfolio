@@ -63,9 +63,9 @@
         height: 300px;
         display: flex;
         justify-content: center;
-        padding: 5px;
+        padding: 3px;
         clip-path: var(--uiMaskClipPath);
-        background-color: $textColor;
+        background-color: black;
 
         @include Responsive(smartphone-landscape){
           width: 250px;

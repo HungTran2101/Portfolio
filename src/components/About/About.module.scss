@@ -8,12 +8,26 @@
     justify-content: space-between;
     gap: 50px;
 
+    @include Responsive(tablet){
+      align-items: center;
+    }
+    @include Responsive(smartphone-landscape) {
+      flex-direction: column;
+    }
+
     .images {
       display: flex;
       flex-direction: column;
-      width: 450px;
+      width: 400px;
       flex-shrink: 0;
       gap: 20px;
+
+      @include Responsive(tablet){
+        width: 300px;
+      }
+      @include Responsive(smartphone-portrait) {
+        width: 100%;
+      }
 
       .banner {
         position: relative;
@@ -55,6 +69,12 @@
             opacity: 0.5;
             transition: opacity 0.3s;
 
+            @include Responsive(smartphone-portrait) {
+              width: 30px;
+              height: 30px;
+              padding: 0;
+            }
+
             &:hover {
               opacity: 1;
             }
@@ -68,6 +88,10 @@
       gap: 20px;
       flex-grow: 1;
 
+      @include Responsive(smartphone-landscape) {
+        text-align: center;
+      }
+
       .label {
         color: $quaternary;
         font-size: 1.25rem;
@@ -77,6 +101,10 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 10px;
+
+        @include Responsive(smartphone-portrait) {
+          font-size: 1.75rem;
+        }
 
         svg {
           color: $quaternary;

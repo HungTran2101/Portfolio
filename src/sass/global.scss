@@ -60,6 +60,11 @@ img {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+
+  @include Responsive(smartphone-portrait){
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }
 
 .section {

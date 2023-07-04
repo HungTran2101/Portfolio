@@ -28,6 +28,7 @@ export default function About() {
                 allowTouchMove={false}
                 loop="true"
                 modules={[Autoplay]}
+                spaceBetween={5}
                 slidesPerView={4}
               >
                 {AboutData.swiperSlides.map((item, index) => (
