@@ -10,6 +10,7 @@
   background-color: $primary;
   padding: 0px 50px;
   font-size: 1.1rem;
+  z-index: 9999;
 
   @include Responsive(smartphone-landscape) {
     justify-content: flex-end;
@@ -64,7 +65,7 @@
 
   .navButton {
     display: none;
-    margin: 30px 0;
+    margin: 29.5px 0;
 
     @include Responsive(smartphone-landscape) {
       display: block;

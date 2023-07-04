@@ -1,6 +1,14 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { SlMenu } from 'react-icons/sl';
 import avatar from '../assets/images/avatar.png';
+import reactsvg from '../assets/images/react-original-wordmark.svg';
+import csssvg from '../assets/images/css3-original-wordmark.svg';
+import htmlsvg from '../assets/images/html5-original-wordmark.svg';
+import javascriptsvg from '../assets/images/javascript-original.svg';
+import nextjssvg from '../assets/images/nextjs-original.svg';
+import sasssvg from '../assets/images/sass-original.svg';
+import tailwindcsssvg from '../assets/images/tailwindcss-plain.svg';
+import typescriptsvg from '../assets/images/typescript-plain.svg';
 
 export const Info = {
   name: "Hung's Portfolio",
@@ -53,20 +61,20 @@ export const HeaderData = {
 export const IntroData = {
   jobPosition: 'Frontend React Developer',
   firstText:
-    "Hii, I'm Tran Nhat Hung. A Front-end Developer in TP. Ho Chi Minh",
+    "Hii, I'm Tran Nhat Hung. A friendly Front-end Developer from TP. Ho Chi Minh, Viet Nam",
   profileLinks: ProfileLinks,
   avatar: Info.avatar,
   techs: {
     label: 'Techs',
     items: [
-      "https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg",
-      "https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-plain.svg",
+      reactsvg,
+      nextjssvg,
+      javascriptsvg,
+      csssvg,
+      htmlsvg,
+      sasssvg,
+      tailwindcsssvg,
+      typescriptsvg,
     ],
   },
 };
