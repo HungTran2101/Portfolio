@@ -59,6 +59,7 @@
       @include Responsive(tablet) {
         position: relative;
         right: 0px;
+        margin-bottom: -3px;
       }
     }
   }
