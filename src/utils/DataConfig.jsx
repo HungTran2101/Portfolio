@@ -9,6 +9,7 @@ import nextjssvg from '../assets/images/nextjs-original.svg';
 import sasssvg from '../assets/images/sass-original.svg';
 import tailwindcsssvg from '../assets/images/tailwindcss-plain.svg';
 import typescriptsvg from '../assets/images/typescript-plain.svg';
+import aboutBanner from '../assets/images/aboutBanner.jpg';
 
 export const Info = {
   name: "Hung's Portfolio",
@@ -61,7 +62,7 @@ export const HeaderData = {
 export const IntroData = {
   jobPosition: 'Frontend React Developer',
   firstText:
-    "Hii, I'm Tran Nhat Hung. A friendly Front-end Developer from TP. Ho Chi Minh, Viet Nam",
+    "Hii, I'm Tran Nhat Hung. A enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam",
   profileLinks: ProfileLinks,
   avatar: Info.avatar,
   techs: {
@@ -77,4 +78,21 @@ export const IntroData = {
       typescriptsvg,
     ],
   },
+};
+
+export const AboutData = {
+  label: 'About Me',
+  title: 'A enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam',
+  banner: aboutBanner,
+  swiperSlides: [
+    reactsvg,
+    nextjssvg,
+    javascriptsvg,
+    csssvg,
+    htmlsvg,
+    sasssvg,
+    tailwindcsssvg,
+    typescriptsvg,
+  ],
+  description: "I'm a Front-end Developer with more than 6 months of experience working with React both on static and dynamic website. I can design and develop a website with smooth user experience by utilizing modern tools, techniques and libraries. I'm still seeking more training and work experiences to strengthen the knowledge in my Front-end road.",
 };

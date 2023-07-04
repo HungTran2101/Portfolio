@@ -1,0 +1,92 @@
+@import '../../sass/global_imports.scss';
+
+.about {
+  position: relative;
+
+  .aboutWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      flex-shrink: 0;
+      gap: 20px;
+
+      .banner {
+        position: relative;
+        border-style: solid;
+        border-width: 5px;
+        border-image: linear-gradient(
+            to bottom right,
+            $quaternary 0%,
+            transparent 25%,
+            transparent 75%,
+            $quaternary 100%
+          )
+          1;
+
+        img {
+          transition: all 0.2s linear;
+          border-radius: 0px 20px 0px 20px;
+        }
+
+        &:hover {
+          img {
+            border-radius: 0px;
+          }
+        }
+      }
+      .techSlides {
+        position: relative;
+        --swiper-wrapper-transition-timing-function: linear;
+
+        .swiper_slide {
+          width: fit-content;
+          height: fit-content;
+
+          .logo {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            padding: 0 25px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex-grow: 1;
+
+      .label {
+        color: $quaternary;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        svg {
+          color: $quaternary;
+          margin-bottom: -5px;
+        }
+      }
+      .description {
+        color: $textColor;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

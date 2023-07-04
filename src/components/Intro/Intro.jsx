@@ -5,7 +5,7 @@ import { IntroData } from '../../utils/DataConfig';
 export default function Intro() {
   return (
     <div id="intro" className={S.intro}>
-      <div className="container">
+      <div className="container section">
         <div className={S.introWrapper}>
           <div className={S.info}>
             <figure className={`${S.mask} ${S.mask_type1} ${S.mask_type1_a1}`}>
