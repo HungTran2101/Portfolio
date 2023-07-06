@@ -22,6 +22,7 @@ export default function Intro() {
                 />
               </div>
               <div className={S.firstText}>{IntroData.firstText}</div>
+              <a href={IntroData.cv} download className={S.cvLink}>You can download my CV here</a>
               <div className={S.links}>
                 {IntroData.profileLinks.map((item, index) => (
                   <a key={index} href={item.url} target="_blank">

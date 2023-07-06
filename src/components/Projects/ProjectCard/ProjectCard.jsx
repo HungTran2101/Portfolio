@@ -1,34 +1,34 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import S from './ProjectCard.module.scss';
 import { FiExternalLink } from 'react-icons/fi';
 import { BsGithub } from 'react-icons/bs';
 
 export default function ProjectCard({ project }) {
-  useEffect(() => {
-    const img = document.querySelector(`.${S.projectImg} img`);
-    const card = document.getElementsByClassName(S.projectCard)[0];
+  const card = useRef();
+  const img = useRef();
 
+  useEffect(() => {
     const translateImgDown = () => {
-      img.style.transform = 'translateY(-93%)';
+      img.current.style.transform = 'translateY(-93%)';
     };
 
     const translateImgUp = () => {
-      img.style.transform = 'translateY(0%)';
+      img.current.style.transform = 'translateY(0%)';
     };
 
-    card.addEventListener('mouseover', translateImgDown);
-    card.addEventListener('mouseout', translateImgUp);
+    card.current.addEventListener('mouseover', translateImgDown);
+    card.current.addEventListener('mouseout', translateImgUp);
 
     return () => {
-      card.removeEventListener('mouseover', translateImgDown);
-      card.removeEventListener('mouseout', translateImgUp);
+      card.current.removeEventListener('mouseover', translateImgDown);
+      card.current.removeEventListener('mouseout', translateImgUp);
     };
   }, []);
 
   return (
-    <div className={S.projectCard}>
+    <div className={S.projectCard} ref={card}>
       <a href={project.demo} target="_blank" className={S.projectImg}>
-        <img src={project.img} alt="projectImg" />
+        <img src={project.img} alt="projectImg" ref={img} />
       </a>
       <div className={S.projectInfo}>
         <div className={S.projectName}>{project.name}</div>
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }) {
         <div className={S.projectLinks}>
           {project.code && (
             <a className={S.projectLink} href={project.code} target="_blank">
-              <BsGithub />
+              Code <BsGithub />
             </a>
           )}
           {project.demo && (

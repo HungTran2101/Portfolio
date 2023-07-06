@@ -10,8 +10,9 @@ import sasssvg from '../assets/images/sass-original.svg';
 import tailwindcsssvg from '../assets/images/tailwindcss-plain.svg';
 import typescriptsvg from '../assets/images/typescript-plain.svg';
 import aboutBanner from '../assets/images/aboutBanner.jpg';
-import chemlinkLogo from '../assets/images/chemlink.png'
-import chemlinkScreenshot from '../assets/images/chemlinkScreenshot.png'
+import chemlinkScreenshot from '../assets/images/chemlinkScreenshot.png';
+import cvScreenshot from '../assets/images/cvScreenshot.png';
+import cvPdf from  '../assets/Hung_FE_React_CV.pdf'
 
 export const Info = {
   name: "Hung's Portfolio",
@@ -20,6 +21,7 @@ export const Info = {
   github: 'https://github.com/HungTran2101',
   linkedin: 'https://www.linkedin.com/in/hùng-trần-nhật-3a0a4323b',
   avatar,
+  cv: cvPdf,
 };
 
 export const NavItems = [
@@ -67,6 +69,7 @@ export const IntroData = {
     "Hii, I'm Tran Nhat Hung. An enthusiasm Front-end Developer from TP. Ho Chi Minh, Viet Nam",
   profileLinks: ProfileLinks,
   avatar: Info.avatar,
+  cv: Info.cv,
   techs: {
     label: 'Techs',
     items: [
@@ -106,12 +109,19 @@ export const ProjectData = {
   projects: [
     {
       name: 'Chemlink',
-      logo: chemlinkLogo,
       description:
         'A website introduce about chemical company. The website provide parallax scrolling, responsive design and animation on scoll to enchance user experiences.',
       img: chemlinkScreenshot,
       techs: ['NextJS', 'SCSS'],
       demo: 'https://www.chemlink.com.vn',
+    },
+    {
+      name: 'Practice CV',
+      description: 'A website for me to practicing about ReactJS Framework.',
+      img: cvScreenshot,
+      techs: ['ReactJS', 'SCSS'],
+      code: 'https://github.com/HungTran2101/MyWebPractiseCV',
+      demo: 'https://trannhathung-practise-cv.vercel.app',
     },
   ],
 };
