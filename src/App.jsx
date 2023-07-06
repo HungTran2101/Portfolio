@@ -1,5 +1,5 @@
 import About from './components/About/About';
-// import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
@@ -13,7 +13,7 @@ function App() {
       <Intro />
       <About />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </>
   );

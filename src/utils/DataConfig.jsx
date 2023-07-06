@@ -1,5 +1,7 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { SlMenu } from 'react-icons/sl';
+import { MdMarkunreadMailbox } from 'react-icons/md';
+import { FaMapLocationDot } from 'react-icons/fa6';
 import avatar from '../assets/images/avatar.png';
 import reactsvg from '../assets/images/react-original-wordmark.svg';
 import csssvg from '../assets/images/css3-original-wordmark.svg';
@@ -18,10 +20,12 @@ export const Info = {
   name: "Hung's Portfolio",
   phone: '+84 938 199 067',
   address: 'TP. Ho Chi Minh, Viet Nam',
+  mail: 'trannhathung2101@gmail.com',
   github: 'https://github.com/HungTran2101',
   linkedin: 'https://www.linkedin.com/in/tran-nhat-hung/',
   avatar,
   cv: cvPdf,
+  location: 'TP. Ho Chi Minh, Viet Nam',
 };
 
 export const NavItems = [
@@ -39,7 +43,7 @@ export const NavItems = [
   },
   {
     name: 'Contact',
-    url: '#contacts',
+    url: '#contact',
   },
 ];
 
@@ -124,6 +128,23 @@ export const ProjectData = {
       demo: 'https://trannhathung-practise-cv.vercel.app',
     },
   ],
+};
+
+export const ContactData = {
+  info: [
+    {
+      label: 'Location',
+      icon: <FaMapLocationDot />,
+      content: Info.location,
+    },
+    {
+      label: 'Mail',
+      icon: <MdMarkunreadMailbox />,
+      content: Info.mail,
+    },
+  ],
+  title: 'Contact',
+  description: 'Feel free to contact me!',
 };
 
 export const FooterData = {
