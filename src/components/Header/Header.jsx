@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <div className={S.header}>
-        <div className={S.name}>{HeaderData.name}</div>
+        <a href="#intro" className={S.name}>{HeaderData.name}</a>
         <div className={S.nav}>
           {HeaderData.navItems.map((item, index) => (
             <a key={index} className={S.navItem} href={item.url}>
