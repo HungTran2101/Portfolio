@@ -1,0 +1,35 @@
+@import '../../sass/global_imports.scss';
+
+.footer {
+  background-color: $quaternary;
+  padding: 45px 0;
+  
+  .footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1rem;
+    gap: 20px;
+    
+    @include Responsive(smartphone-portrait) {
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .copyright {
+      color: white;
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+    .links {
+      font-size: 1.25rem;
+      display: flex;
+      gap: 20px;
+
+      a{
+        color: white;
+      }
+    }
+  }
+}

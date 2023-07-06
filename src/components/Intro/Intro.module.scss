@@ -128,14 +128,11 @@
       text-align: center;
       font-size: 1.5rem;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin: 40px 0 0px;
     }
     .techs {
       display: flex;
       justify-content: space-between;
-      border-top: solid $quaternary;
-      border-bottom: solid $quaternary;
-      border-width: 2px;
       padding: 30px 5px;
       gap: 20px;
 

@@ -12,14 +12,14 @@ import typescriptsvg from '../assets/images/typescript-plain.svg';
 import aboutBanner from '../assets/images/aboutBanner.jpg';
 import chemlinkScreenshot from '../assets/images/chemlinkScreenshot.png';
 import cvScreenshot from '../assets/images/cvScreenshot.png';
-import cvPdf from  '../assets/Hung_FE_React_CV.pdf'
+import cvPdf from '../assets/Hung_FE_React_CV.pdf';
 
 export const Info = {
   name: "Hung's Portfolio",
   phone: '+84 938 199 067',
   address: 'TP. Ho Chi Minh, Viet Nam',
   github: 'https://github.com/HungTran2101',
-  linkedin: 'https://www.linkedin.com/in/hùng-trần-nhật-3a0a4323b',
+  linkedin: 'https://www.linkedin.com/in/tran-nhat-hung/',
   avatar,
   cv: cvPdf,
 };
@@ -124,4 +124,9 @@ export const ProjectData = {
       demo: 'https://trannhathung-practise-cv.vercel.app',
     },
   ],
+};
+
+export const FooterData = {
+  copyright: 'Copyright © 2023. All rights are reserved',
+  links: ProfileLinks,
 };

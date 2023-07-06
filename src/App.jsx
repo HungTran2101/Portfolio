@@ -1,4 +1,6 @@
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Projects from './components/Projects/Projects';
@@ -11,6 +13,8 @@ function App() {
       <Intro />
       <About />
       <Projects />
+      {/* <Contact /> */}
+      <Footer />
     </>
   );
 }
