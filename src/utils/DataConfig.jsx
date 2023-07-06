@@ -14,6 +14,7 @@ import typescriptsvg from '../assets/images/typescript-plain.svg';
 import aboutBanner from '../assets/images/aboutBanner.jpg';
 import chemlinkScreenshot from '../assets/images/chemlinkScreenshot.png';
 import cvScreenshot from '../assets/images/cvScreenshot.png';
+import chatalaScreenshot from '../assets/images/chatalaScreenshot.png';
 import cvPdf from '../assets/Hung_FE_React_CV.pdf';
 
 export const Info = {
@@ -104,7 +105,7 @@ export const AboutData = {
     typescriptsvg,
   ],
   description:
-    "I am a front-end developer with 1 year of experience working with React on both static and dynamic websites. Currently, I am seeking a front-end developer position to further enhance my skills, gain additional training, and broaden my knowledge in front-end development. I am eager to make a significant contribution to the success of the company.",
+    'I am a front-end developer with 1 year of experience working with React on both static and dynamic websites. Currently, I am seeking a front-end developer position to further enhance my skills, gain additional training, and broaden my knowledge in front-end development. I am eager to make a significant contribution to the success of the company.',
 };
 
 export const ProjectData = {
@@ -126,6 +127,14 @@ export const ProjectData = {
       techs: ['ReactJS', 'SCSS'],
       code: 'https://github.com/HungTran2101/MyWebPractiseCV',
       demo: 'https://trannhathung-practise-cv.vercel.app',
+    },
+    {
+      name: 'Chatala',
+      description:
+        'A feature-rich social network website with audio/video calling, typing indicator, and real-time chatting events. Collaborated with a team of two members to successfully complete this project, which served as the graduation thesis.',
+      img: chatalaScreenshot,
+      techs: ['MERN','NextJS', 'TailwindCSS', 'SocketIO'],
+      code: 'https://github.com/HungTran2101/Chatala-KLTN',
     },
   ],
 };

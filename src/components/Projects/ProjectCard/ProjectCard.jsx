@@ -16,8 +16,10 @@ export default function ProjectCard({ project }) {
       img.current.style.transform = 'translateY(0%)';
     };
 
-    card.current.addEventListener('mouseover', translateImgDown);
-    card.current.addEventListener('mouseout', translateImgUp);
+    if (project.name !== 'Chatala') {
+      card.current.addEventListener('mouseover', translateImgDown);
+      card.current.addEventListener('mouseout', translateImgUp);
+    }
 
     return () => {
       card.current.removeEventListener('mouseover', translateImgDown);
@@ -27,7 +29,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className={S.projectCard} ref={card}>
-      <a href={project.demo} target="_blank" className={S.projectImg}>
+      <a href={project.demo || project.code} target="_blank" className={S.projectImg}>
         <img src={project.img} alt="projectImg" ref={img} />
       </a>
       <div className={S.projectInfo}>
