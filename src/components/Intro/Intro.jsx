@@ -1,4 +1,3 @@
-import React from 'react';
 import S from './Intro.module.scss';
 import { IntroData } from '../../utils/DataConfig';
 
@@ -25,7 +24,7 @@ export default function Intro() {
               <a href={IntroData.cv} download className={S.cvLink}>You can download my CV here</a>
               <div className={S.links}>
                 {IntroData.profileLinks.map((item, index) => (
-                  <a key={index} href={item.url} target="_blank">
+                  <a key={index} href={item.url} target="_blank" rel="noreferrer">
                     {item.logo}
                   </a>
                 ))}

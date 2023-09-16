@@ -15,7 +15,7 @@ import aboutBanner from '../assets/images/aboutBanner.jpg';
 import chemlinkScreenshot from '../assets/images/chemlinkScreenshot.png';
 import cvScreenshot from '../assets/images/cvScreenshot.png';
 import chatalaScreenshot from '../assets/images/chatalaScreenshot.png';
-import cvPdf from '../assets/Hung_FE_React_CV.pdf';
+import cvPdf from '../assets/HungCV_Fresher_en.pdf';
 
 export const Info = {
   name: "Hung's Portfolio",
