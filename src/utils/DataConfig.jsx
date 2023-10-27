@@ -105,7 +105,7 @@ export const AboutData = {
     typescriptsvg,
   ],
   description:
-    'I am a front-end developer with 1 year of experience working with React on both static and dynamic websites. Currently, I am seeking a front-end developer position to further enhance my skills, gain additional training, and broaden my knowledge in front-end development. I am eager to make a significant contribution to the success of the company.',
+    'I am a front-end developer with 6 months of experience working with React on both static and dynamic websites. Currently, I am seeking a front-end developer position to further enhance my skills, gain additional training, and broaden my knowledge in front-end development. I am eager to make a significant contribution to the success of the company.',
 };
 
 export const ProjectData = {
